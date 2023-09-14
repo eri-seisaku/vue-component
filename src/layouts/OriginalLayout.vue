@@ -1,4 +1,5 @@
 <template>
+  <!-- 最初に作った管理画面デザイン -->
   <v-app color="background">
 
     <v-system-bar color="user">
