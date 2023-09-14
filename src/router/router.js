@@ -15,6 +15,16 @@ const routes = [
         name: 'dragUpload',
         component: () => import('@/components/upload/ChildByReffect.vue'),
       },
+      {
+        path: '/next',
+        name: 'next',
+        component: () => import('@/components/NextButton.vue'),
+      },
+      {
+        path: '/form',
+        name: 'authForm',
+        component: () => import('@/views/AuthForm.vue'),
+      },
     ],
   },
 ]
