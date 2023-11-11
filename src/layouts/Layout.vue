@@ -20,10 +20,11 @@
 
       <v-list>
         <v-list-item
-          v-for="[icon, text] in links"
+          v-for="[icon, text, link] in links"
           :key="icon"
           :prepend-icon="icon"
           :title="text"
+          :to="link"
           link
         ></v-list-item>
       </v-list>
@@ -50,10 +51,11 @@
 
 
   const links = [
-    ['mdi-inbox-arrow-down', 'Inbox'],
-    ['mdi-send', 'Send'],
-    ['mdi-delete', 'Trash'],
-    ['mdi-alert-octagon', 'Spam'],
+    ['mdi-upload', 'Upload', '/'],
+    ['mdi-upload', 'Upload2', '/upload'],
+    ['mdi-delete', 'Button', '/button'],
+    ['mdi-alert-octagon', 'Form', '/form'],
+    ['mdi-alert-octagon', 'Table', '/table'],
   ]
 
   const drawer = ref(null)

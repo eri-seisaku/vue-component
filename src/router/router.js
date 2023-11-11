@@ -16,14 +16,29 @@ const routes = [
         component: () => import('@/components/upload/ChildByReffect.vue'),
       },
       {
-        path: '/next',
-        name: 'next',
-        component: () => import('@/components/NextButton.vue'),
+        path: '/button',
+        name: 'button',
+        component: () => import('@/components/SomeButton.vue'),
       },
       {
         path: '/form',
         name: 'authForm',
         component: () => import('@/views/AuthForm.vue'),
+      },
+      {
+        path: '/table',
+        name: 'table',
+        component: () => import('@/components/DataTable.vue'),
+      },
+      {
+        path: '/test',
+        name: 'test',
+        component: () => import('@/views/Test.vue'),
+      },
+      {
+        path: '/pdf',
+        name: 'pdf',
+        component: () => import('@/components/ExportPDF.vue'),
       },
     ],
   },

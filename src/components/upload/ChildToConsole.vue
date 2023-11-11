@@ -108,7 +108,7 @@ const parentDialog = computed({
 // 子→親へ
 const closeDialog = () => emit('update:dialog', false);
 
-// 初期化
+// 初期
 const dragover = ref(false);
 const uploadedFiles = ref([]);
 const errorMessage = ref('');

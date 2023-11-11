@@ -1,14 +1,16 @@
 <template>
   <v-container>
-    <!-- エラーメッセージを表示する要素 -->
-    <v-alert
-      border="start"
-      variant="tonal"
-      color="red-accent-4"
-      v-if="errorMessage"
+    <!-- タイトル -->
+    <Title
+      color="primary"
+      iconName="mdi-upload"
     >
-      {{ errorMessage }}
-    </v-alert>
+    <template v-slot:title>
+      UPLOAD
+    </template>
+    </Title>
+    <!-- 本文 -->
+    <p class="ma-12">ボタンを押すとアップロードエリアが表示される</p>
 
     <!-- アップロードボタン -->
     <v-btn
@@ -29,7 +31,8 @@
 </template>
 
 <script setup>
-import Upload from '../../components/upload/ChildToConsole.vue';
+import Upload from '@/components/upload/ChildToConsole.vue';
+import Title from '@/components/Title.vue';
 // import Upload from '../../components/upload/ChildToStorage.vue';
 import { ref } from 'vue'
 
